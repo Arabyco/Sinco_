@@ -3,41 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SINCO STUDIOS | Premium Web Design Agency</title>
+    <title>SINCO STUDIOS | Premium Web Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- BOOK OPENING INTRO -->
+    <div class="book-intro" id="bookIntro">
+        <div class="book">
+            <div class="book-left">
+                <div class="book-left-content">
+                    <div class="book-logo">
+                        <svg width="80" height="80" viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" r="38" fill="none" stroke="#c8a45c" stroke-width="1.5"/>
+                            <text x="40" y="46" text-anchor="middle" fill="#c8a45c" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="2">S</text>
+                            <line x1="22" y1="22" x2="32" y2="32" stroke="#c8a45c" stroke-width="0.5" opacity="0.4"/>
+                            <line x1="58" y1="22" x2="48" y2="32" stroke="#c8a45c" stroke-width="0.5" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <span class="book-brand">SINCO</span>
+                </div>
+            </div>
+            <div class="book-right">
+                <div class="book-right-content">
+                    <span class="book-subtitle">STUDIOS</span>
+                    <div class="book-divider"></div>
+                    <p class="book-tagline">Premium Web Design</p>
+                </div>
+            </div>
+            <div class="book-spine"></div>
+        </div>
+    </div>
+
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-dot"></div>
-
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="preloader-logo">S</div>
-        <div class="preloader-text">SINCO STUDIOS</div>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="nav-logo-text">SINCO</span>
-                <span class="nav-logo-sub">STUDIOS</span>
+                <svg width="32" height="32" viewBox="0 0 80 80" class="nav-logo-svg">
+                    <circle cx="40" cy="40" r="38" fill="none" stroke="#c8a45c" stroke-width="1.5"/>
+                    <text x="40" y="46" text-anchor="middle" fill="#c8a45c" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600">S</text>
+                </svg>
+                <div class="nav-logo-words">
+                    <span class="nav-logo-text">SINCO</span>
+                    <span class="nav-logo-sub">STUDIOS</span>
+                </div>
             </a>
             <div class="mobile-toggle" id="mobileToggle">
                 <span></span><span></span><span></span>
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#process">Process</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact" class="nav-cta">Start Project</a></li>
             </ul>
         </div>
@@ -45,110 +72,43 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="hero-video-bg">
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-        </div>
+        <div class="hero-bg-glow"></div>
+        <div class="hero-grid-lines"></div>
         <div class="hero-content">
-            <span class="hero-tagline reveal">Premium Web Design Agency</span>
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span> Accepting Projects Worldwide
+            </div>
             <h1 class="hero-title reveal">
-                We Build <span class="text-accent">Digital</span><br>Experiences That Convert
+                We craft <span class="text-accent">digital</span><br>masterpieces
             </h1>
             <p class="hero-subtitle reveal">
-                Custom websites for barbers, salons, and luxury brands. 
-                Designed in 48 hours. Deployed worldwide.
+                Custom websites for any business. Designed to impress your customers 
+                and built to grow your brand. Delivered in 48 hours.
             </p>
             <div class="hero-buttons reveal">
                 <a href="#pricing" class="btn btn-primary">View Plans <i class="fas fa-arrow-right"></i></a>
-                <a href="#work" class="btn btn-outline">Our Work</a>
+                <a href="#process" class="btn btn-outline">How It Works</a>
             </div>
             <div class="hero-stats reveal">
                 <div class="stat-item">
                     <span class="stat-number" data-target="50">0</span>
-                    <span class="stat-label">+ Projects Delivered</span>
+                    <span class="stat-label">Projects Delivered</span>
                 </div>
+                <div class="stat-divider"></div>
                 <div class="stat-item">
                     <span class="stat-number" data-target="48">0</span>
                     <span class="stat-label">Hour Turnaround</span>
                 </div>
+                <div class="stat-divider"></div>
                 <div class="stat-item">
                     <span class="stat-number" data-target="100">0</span>
-                    <span class="stat-label">% Client Satisfaction</span>
+                    <span class="stat-label">% Satisfaction</span>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-hint">
             <span>Scroll</span>
             <div class="scroll-line"></div>
-        </div>
-    </section>
-
-    <!-- Work / Portfolio Gallery -->
-    <section class="work-section" id="work">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="section-title">Recent <span class="text-accent">Work</span></h2>
-                <p class="section-desc">Luxury websites we've crafted for premium brands</p>
-            </div>
-            <div class="work-grid">
-                <div class="work-item reveal">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-cut"></i>
-                            <span>Barber Shop</span>
-                        </div>
-                        <div class="work-overlay">
-                            <h3>Luxury Barber</h3>
-                            <p>Premium grooming brand</p>
-                            <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item reveal">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-spa"></i>
-                            <span>Salon</span>
-                        </div>
-                        <div class="work-overlay">
-                            <h3>Elite Salon</h3>
-                            <p>Beauty & wellness studio</p>
-                            <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item reveal">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <span>Fitness</span>
-                        </div>
-                        <div class="work-overlay">
-                            <h3>Premium Gym</h3>
-                            <p>Fitness & training center</p>
-                            <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item reveal">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-utensils"></i>
-                            <span>Restaurant</span>
-                        </div>
-                        <div class="work-overlay">
-                            <h3>Fine Dining</h3>
-                            <p>Restaurant & bar brand</p>
-                            <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -156,40 +116,52 @@
     <section class="services-section" id="services">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Services</span>
-                <h2 class="section-title">What We <span class="text-accent">Build</span></h2>
-                <p class="section-desc">Complete web solutions for your brand</p>
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Complete <span class="text-accent">Web Solutions</span></h2>
+                <p class="section-desc">Everything your business needs to succeed online</p>
             </div>
             <div class="services-grid">
                 <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Custom Websites</h3>
-                    <p>Bespoke designs tailored to your brand identity. Every pixel crafted with purpose.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Design</h3>
+                    <p>Unique, handcrafted designs that match your brand perfectly. No templates — every site is original.</p>
                 </div>
                 <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Responsive Design</h3>
-                    <p>Flawless experience on every device. Mobile, tablet, and desktop optimized.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-screen"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Perfect on every screen — mobile, tablet, desktop. Over 60% of traffic is mobile, so we nail it.</p>
                 </div>
                 <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-search"></i></div>
-                    <h3>SEO Optimized</h3>
-                    <p>Built to rank. Every site comes with advanced SEO to get you found on Google.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    <h3>SEO Built-In</h3>
+                    <p>Every site is optimized for Google from day one. Get found by customers searching for your services.</p>
                 </div>
                 <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Fast Delivery</h3>
-                    <p>Your site ready in 48 hours. No delays, no excuses — just results.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized code, fast loading, smooth animations. Speed matters for both users and Google rankings.</p>
                 </div>
                 <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
                     <h3>Domain & Hosting</h3>
-                    <p>We handle everything from domain setup to deployment. You just approve.</p>
+                    <p>We handle everything — domain setup, deployment, and hosting. Your site goes live with zero stress.</p>
                 </div>
                 <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
                     <h3>Ongoing Support</h3>
-                    <p>We're here after launch. Updates, edits, and maintenance included.</p>
+                    <p>We're here after launch. Updates, edits, and maintenance whenever you need it.</p>
                 </div>
             </div>
         </div>
@@ -201,7 +173,7 @@
             <div class="section-header reveal">
                 <span class="section-tag">Pricing</span>
                 <h2 class="section-title">Choose Your <span class="text-accent">Plan</span></h2>
-                <p class="section-desc">Simple, transparent pricing. No hidden costs.</p>
+                <p class="section-desc">Simple pricing. 35% deposit to start, 65% on delivery.</p>
             </div>
             <div class="pricing-grid">
                 <!-- Starter -->
@@ -211,16 +183,20 @@
                         <p>For getting online fast</p>
                     </div>
                     <div class="pricing-price">$299</div>
+                    <div class="pricing-deposit">
+                        <span>Deposit</span>
+                        <strong>$105</strong>
+                    </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> 4-page custom website</li>
                         <li><i class="fas fa-check"></i> Mobile responsive</li>
                         <li><i class="fas fa-check"></i> Contact form</li>
-                        <li><i class="fas fa-check"></i> Basic SEO</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Gallery section</li>
+                        <li><i class="fas fa-check"></i> Basic SEO setup</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Image gallery</li>
                         <li class="disabled"><i class="fas fa-times"></i> Domain setup</li>
                         <li class="disabled"><i class="fas fa-times"></i> Booking system</li>
                     </ul>
-                    <button class="btn btn-outline btn-full" onclick="openOrder('Starter', '299')">Get Started</button>
+                    <button class="btn btn-outline btn-full" onclick="openOrder('Starter', '299', '105')">Get Started</button>
                 </div>
                 <!-- Standard -->
                 <div class="pricing-card featured reveal">
@@ -230,16 +206,20 @@
                         <p>Best for growing businesses</p>
                     </div>
                     <div class="pricing-price">$599</div>
+                    <div class="pricing-deposit">
+                        <span>Deposit</span>
+                        <strong>$210</strong>
+                    </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> 6-page custom website</li>
                         <li><i class="fas fa-check"></i> Mobile responsive</li>
                         <li><i class="fas fa-check"></i> Contact form</li>
                         <li><i class="fas fa-check"></i> Advanced SEO</li>
-                        <li><i class="fas fa-check"></i> Gallery section</li>
+                        <li><i class="fas fa-check"></i> Image gallery</li>
                         <li><i class="fas fa-check"></i> Domain setup</li>
                         <li class="disabled"><i class="fas fa-times"></i> Booking system</li>
                     </ul>
-                    <button class="btn btn-primary btn-full" onclick="openOrder('Standard', '599')">Get Started</button>
+                    <button class="btn btn-primary btn-full" onclick="openOrder('Standard', '599', '210')">Get Started</button>
                 </div>
                 <!-- Premium -->
                 <div class="pricing-card reveal">
@@ -248,18 +228,23 @@
                         <p>Complete brand solution</p>
                     </div>
                     <div class="pricing-price">$999</div>
+                    <div class="pricing-deposit">
+                        <span>Deposit</span>
+                        <strong>$350</strong>
+                    </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> 6-page custom website</li>
                         <li><i class="fas fa-check"></i> Mobile responsive</li>
                         <li><i class="fas fa-check"></i> Contact form</li>
                         <li><i class="fas fa-check"></i> Full SEO package</li>
-                        <li><i class="fas fa-check"></i> Gallery + video</li>
+                        <li><i class="fas fa-check"></i> Image gallery + video</li>
                         <li><i class="fas fa-check"></i> Domain setup</li>
                         <li><i class="fas fa-check"></i> Booking system</li>
                     </ul>
-                    <button class="btn btn-outline btn-full" onclick="openOrder('Premium', '999')">Get Started</button>
+                    <button class="btn btn-outline btn-full" onclick="openOrder('Premium', '999', '350')">Get Started</button>
                 </div>
             </div>
+            <p class="pricing-note reveal">* 35% deposit upfront. Remaining 65% due upon delivery. 100% satisfaction guaranteed.</p>
         </div>
     </section>
 
@@ -269,70 +254,37 @@
             <div class="section-header reveal">
                 <span class="section-tag">Process</span>
                 <h2 class="section-title">How It <span class="text-accent">Works</span></h2>
-                <p class="section-desc">From idea to launch in 4 simple steps</p>
+                <p class="section-desc">From idea to launch — simple and fast</p>
             </div>
             <div class="process-timeline">
                 <div class="process-step reveal">
-                    <div class="step-number">01</div>
-                    <h3>You Pick a Plan</h3>
-                    <p>Choose the package that fits your needs. Starter, Standard, or Premium.</p>
+                    <div class="step-number">1</div>
+                    <div class="step-line"></div>
+                    <h3>Pick Your Plan</h3>
+                    <p>Choose Starter, Standard, or Premium. Pay 35% deposit to begin.</p>
                 </div>
                 <div class="process-step reveal">
-                    <div class="step-number">02</div>
-                    <h3>We Discuss Your Vision</h3>
-                    <p>Share your brand details. I'll understand your style and goals.</p>
+                    <div class="step-number">2</div>
+                    <div class="step-line"></div>
+                    <h3>Share Your Vision</h3>
+                    <p>Tell us about your business. Brand, style, goals — we listen carefully.</p>
                 </div>
                 <div class="process-step reveal">
-                    <div class="step-number">03</div>
-                    <h3>I Build & Deliver</h3>
-                    <p>Your website is crafted within 48 hours. Pixel-perfect and ready to launch.</p>
+                    <div class="step-number">3</div>
+                    <div class="step-line"></div>
+                    <h3>We Build It</h3>
+                    <p>Your site is crafted in 48 hours. Pixel-perfect design, ready to review.</p>
                 </div>
                 <div class="process-step reveal">
-                    <div class="step-number">04</div>
-                    <h3>Go Live Worldwide</h3>
-                    <p>I handle deployment. Your brand is now live, professional, and stunning.</p>
+                    <div class="step-number">4</div>
+                    <h3>Go Live</h3>
+                    <p>Pay remaining 65%. We deploy your site worldwide. You're officially online.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Testimonials</span>
-                <h2 class="section-title">What <span class="text-accent">Clients</span> Say</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p>"My barbershop looks premium now. Clients mention the website all the time. Best investment I've made."</p>
-                    <div class="testimonial-author">
-                        <strong>Marcus J.</strong>
-                        <span>Barber Shop Owner, London</span>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p>"Delivered in 2 days exactly as promised. The site is fast, beautiful, and I didn't have to do anything."</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah K.</strong>
-                        <span>Salon Owner, Dubai</span>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p>"Professional, fast, and the design quality is insane. I've already referred 3 friends."</p>
-                    <div class="testimonial-author">
-                        <strong>Alex T.</strong>
-                        <span>Gym Owner, New York</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
+    <!-- FAQ Section -->
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section-header reveal">
@@ -342,29 +294,29 @@
             <div class="faq-list">
                 <div class="faq-item reveal">
                     <div class="faq-question">
-                        <span>How fast will I get my website?</span>
+                        <span>How fast will my website be ready?</span>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Starter: 72 hours. Standard: 48 hours. Premium: 24 hours. Rush delivery available on request.</p>
+                        <p>Starter: 72 hours. Standard: 48 hours. Premium: 24 hours. Need it faster? Rush delivery available.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal">
                     <div class="faq-question">
-                        <span>What do I need to provide?</span>
+                        <span>What industries do you work with?</span>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Your brand name, logo (if you have one), photos, services list, and any design preferences. Don't have everything? I'll work with what you have.</p>
+                        <p>Any business that needs a website — restaurants, salons, gyms, real estate, medical practices, retail, e-commerce, consulting, and more. If you need a stunning online presence, we build it.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal">
                     <div class="faq-question">
-                        <span>Can I edit the website myself later?</span>
+                        <span>What do I need to provide to get started?</span>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes. I can set you up with easy editing access, or handle updates for a small fee. Premium includes 1 month of free updates.</p>
+                        <p>Your business name, a few photos, your services or products list, and any specific design preferences. Don't have everything ready? We can work with what you have.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal">
@@ -373,7 +325,25 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>I'll revise until you're satisfied. If after 2 revisions you still don't love it, full refund — no questions.</p>
+                        <p>We revise until you're satisfied. If after 2 revisions you still don't love it — full refund, no questions asked. That's our guarantee.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Can I update the site myself later?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We can set you up with easy editing access, or handle updates for you anytime. Premium plan includes 1 month of free updates.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>What's the payment structure?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>35% deposit to start the project. Remaining 65% due upon delivery — only when you're happy with the final result. We accept Wise, PayPal, and bank transfer.</p>
                     </div>
                 </div>
             </div>
@@ -385,7 +355,7 @@
         <div class="container">
             <div class="cta-content reveal">
                 <h2>Ready to <span class="text-accent">Elevate</span> Your Brand?</h2>
-                <p>DM us on Instagram or choose a plan above. Let's build something that converts.</p>
+                <p>Pick a plan above or reach out directly. Let's build something exceptional together.</p>
                 <div class="cta-buttons">
                     <a href="https://instagram.com/sinco.studios" target="_blank" class="btn btn-primary">
                         <i class="fab fa-instagram"></i> @sinco.studios
@@ -403,8 +373,17 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>SINCO <span>STUDIOS</span></h3>
-                    <p>Premium web design for barbers, salons, and luxury brands worldwide. Pixel-perfect. Fast delivery. Guaranteed.</p>
+                    <div class="footer-logo-wrap">
+                        <svg width="36" height="36" viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" r="38" fill="none" stroke="#c8a45c" stroke-width="1.5"/>
+                            <text x="40" y="46" text-anchor="middle" fill="#c8a45c" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600">S</text>
+                        </svg>
+                        <div>
+                            <strong>SINCO</strong>
+                            <span>STUDIOS</span>
+                        </div>
+                    </div>
+                    <p>Premium web design for businesses worldwide. Pixel-perfect, fast delivery, guaranteed results.</p>
                     <div class="footer-social">
                         <a href="https://instagram.com/sinco.studios" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="mailto:yassinelaraby18@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -412,7 +391,6 @@
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <a href="#work">Portfolio</a>
                     <a href="#services">Services</a>
                     <a href="#pricing">Pricing</a>
                     <a href="#process">Process</a>
@@ -420,13 +398,14 @@
                 </div>
                 <div class="footer-links">
                     <h4>Contact</h4>
-                    <p>Instagram: @sinco.studios</p>
+                    <p>IG: @sinco.studios</p>
                     <p>Email: yassinelaraby18@gmail.com</p>
-                    <p>Delivery: 24-72 hours</p>
+                    <p>Delivery: 24-72 hrs</p>
+                    <p>Deposit: 35% to start</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 SINCO STUDIOS. All rights reserved. Built with 🔥</p>
+                <p>&copy; 2026 SINCO STUDIOS. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -439,14 +418,18 @@
             <div class="modal-header">
                 <span class="modal-plan-label" id="modalPlanLabel">Standard Plan</span>
                 <div class="modal-plan-price" id="modalPlanPrice">$599</div>
+                <div class="modal-plan-deposit" id="modalPlanDeposit">
+                    <span class="deposit-badge">35% Deposit: <strong id="depositAmount">$210</strong></span>
+                </div>
             </div>
             <form id="orderForm">
                 <input type="hidden" id="formPlan" name="plan">
                 <input type="hidden" id="formPrice" name="price">
+                <input type="hidden" id="formDeposit" name="deposit">
                 <div class="form-row">
                     <div class="form-group">
                         <label>Your Name *</label>
-                        <input type="text" name="name" placeholder="John Doe" required>
+                        <input type="text" name="name" placeholder="Your full name" required>
                     </div>
                     <div class="form-group">
                         <label>Business Name *</label>
@@ -455,21 +438,35 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Email *</label>
+                        <label>Email Address *</label>
                         <input type="email" name="email" placeholder="you@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label>Phone</label>
+                        <label>Phone Number</label>
                         <input type="tel" name="phone" placeholder="+1 234 567 890">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>City / Country *</label>
-                    <input type="text" name="location" placeholder="New York, USA" required>
+                    <label>Industry / Business Type *</label>
+                    <input type="text" name="industry" placeholder="e.g. Restaurant, Salon, Real Estate, Retail..." required>
                 </div>
                 <div class="form-group">
-                    <label>Tell us about your business</label>
-                    <textarea name="message" rows="4" placeholder="Describe your brand, what you do, and what you're looking for..."></textarea>
+                    <label>City / Country *</label>
+                    <input type="text" name="location" placeholder="e.g. London, UK" required>
+                </div>
+                <div class="form-group">
+                    <label>Tell us about your project</label>
+                    <textarea name="message" rows="4" placeholder="Describe your business, what you need, and any design ideas you have..."></textarea>
+                </div>
+                <div class="form-summary">
+                    <div class="summary-row">
+                        <span>Deposit due today (35%)</span>
+                        <strong id="summaryDeposit">$210</strong>
+                    </div>
+                    <div class="summary-row">
+                        <span>Remaining on delivery (65%)</span>
+                        <strong id="summaryRemaining">$389</strong>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
                     <span id="submitText">Submit Order</span>
@@ -479,7 +476,7 @@
             <div class="form-success" id="formSuccess" style="display:none;">
                 <div class="success-icon">✓</div>
                 <h3>Order Received!</h3>
-                <p>We'll get back to you within 24 hours.</p>
+                <p>We'll reach out within 24 hours to get started!</p>
             </div>
         </div>
     </div>
